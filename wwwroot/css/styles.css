@@ -15,7 +15,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* Common */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Common ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 a {
     text-decoration: none;
 }
@@ -32,7 +32,7 @@ a {
     min-width: 98px;
     padding: 18px 16px;
     background: var(--primary-color);
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
@@ -44,7 +44,16 @@ a {
     opacity: 0.8;
 }
 
-/* ================= Header ================= */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Common ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Header ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .header {
     position: relative;
     background: #E6F0FF;
@@ -88,6 +97,7 @@ a {
 .navbar .buttons-btn {
     padding: 13px 16px;
     margin-left: 18px;
+    border-radius: 8px;
 }
 
 .hero {
@@ -130,6 +140,243 @@ a {
 
 .hero .hero-img {
     position: absolute;
-    right: 65px;
+    right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
 }
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Header ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Clients ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.client {
+    margin-top: 122px;
+}
+
+.client .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client .desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    /* identical to box height, or 125% */
+    color: #7D8589;
+}
+
+.client .row-desc {
+    margin-top: 23px;
+}
+
+.client .images {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Clients ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  Guides  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.guides {
+    margin-top: 200px;
+}
+
+.guides .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    /* or 100% */
+    text-align: center;
+    color: #000339;
+    position: relative;
+}
+
+.guides .sub-title::before {
+    position: absolute;
+    top: -10px;
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guides .desc {
+    width: 459px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    /* or 188% */
+    text-align: center;
+    color: #5A6473;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-guide {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.guide-item {
+    margin: 0 70px;
+    text-align: center;
+}
+
+.guide-item .title {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    /* identical to box height, or 110% */
+    color: #3B3C45;
+}
+
+.guide-item .link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 21px;
+    /* identical to box height */
+    color: #0689FF;
+}
+
+.guide-item .arrow {
+    margin-left: 6px;
+}
+
+.guides .guide-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.guide-btn .btn {
+    min-width: 170px;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Guides  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Featured Properties ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.feature {
+    margin-top: 120px;
+    /* height: 727px; */
+    background: #F5FAFE;
+    /* position: relative; */
+    padding: 110px 0;
+}
+
+/* .feature .content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.feature .sub-title {
+    /* display: inline-block; */
+    /* margin-top: 110px; */
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.feature .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.feature .desc {
+    --line-clamp: 3;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5A6473;
+    word-break: break-all;
+}
+
+.feature .link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #0689FF;
+
+}
+
+.feature .link .arrow {
+    margin-left: 8px;
+}
+
+.feature .list {
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.feature .item {
+    flex: 1;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.feature .item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.feature .item .body {
+    padding: 17px 20px 24px;
+}
+
+.feature .item .title a {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #000339;
+}
+
+.feature .item .desc {
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #A3A6AB;
+}
+
+.feature .item .info {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.feature .item .label {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.01em;
+    color: #4D4D52;
+}
+
+.feature .item .icon {
+    margin-left: 23px;
+}
+
+.feature .item .icon:first-child {
+    margin-left: 0;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Featured Properties ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
